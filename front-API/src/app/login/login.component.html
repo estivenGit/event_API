@@ -1,0 +1,31 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-toolbar color="primary">
+        <span>Login</span>
+      </mat-toolbar>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form (ngSubmit)="onLogin()">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Usuario</mat-label>
+          <input matInput [(ngModel)]="username" name="Usuario" placeholder="Ingrese su Usuario" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Contraseña</mat-label>
+          <input matInput [(ngModel)]="password" name="Contraseña" type="password" placeholder="Ingrese su Contraseña" required>
+        </mat-form-field>
+
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit">Login</button>
+        </div>
+      </form>
+      <p *ngIf="mensaje" class="message">{{ mensaje }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+  

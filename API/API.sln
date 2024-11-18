@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{3FEFC524-F270-4FA5-8162-D278EAB982C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentacion", "1. Presentacion", "{3F75C5D4-2D34-4DF9-BE85-56075D28A687}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Dominio", "2. Dominio", "{097F718F-FA9F-4C2C-B56B-7422C1CDAFF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. AccesoDatos", "3. AccesoDatos", "{B7A61C10-244E-4236-B3BF-5BBFC325ACFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Transversal", "4. Transversal", "{7287FBF0-AAAA-4FB3-BB4D-4A87C00FA23B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaNegocio", "LogicaNegocio\LogicaNegocio.csproj", "{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{A8CDA749-8998-448A-B2C3-94AF65E43820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transversal", "Transversal\Transversal.csproj", "{830225BF-1F5A-454B-9D49-15F5137875AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Debug|x64.ActiveCfg = Debug|x64
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Debug|x64.Build.0 = Debug|x64
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Release|x64.ActiveCfg = Release|x64
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4}.Release|x64.Build.0 = Release|x64
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Debug|x64.ActiveCfg = Debug|x64
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Debug|x64.Build.0 = Debug|x64
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Release|x64.ActiveCfg = Release|x64
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9}.Release|x64.Build.0 = Release|x64
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Debug|x64.ActiveCfg = Debug|x64
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Debug|x64.Build.0 = Debug|x64
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Release|x64.ActiveCfg = Release|x64
+		{A8CDA749-8998-448A-B2C3-94AF65E43820}.Release|x64.Build.0 = Release|x64
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Debug|x64.ActiveCfg = Debug|x64
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Debug|x64.Build.0 = Debug|x64
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Release|x64.ActiveCfg = Release|x64
+		{830225BF-1F5A-454B-9D49-15F5137875AB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3FEFC524-F270-4FA5-8162-D278EAB982C4} = {3F75C5D4-2D34-4DF9-BE85-56075D28A687}
+		{38ED4B20-DCE0-4819-A0BE-0F8FD93C08C9} = {097F718F-FA9F-4C2C-B56B-7422C1CDAFF9}
+		{A8CDA749-8998-448A-B2C3-94AF65E43820} = {B7A61C10-244E-4236-B3BF-5BBFC325ACFA}
+		{830225BF-1F5A-454B-9D49-15F5137875AB} = {7287FBF0-AAAA-4FB3-BB4D-4A87C00FA23B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CB1A9FC-A2BD-4F0D-8D6F-262E69B9781C}
+	EndGlobalSection
+EndGlobal

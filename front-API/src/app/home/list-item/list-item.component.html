@@ -1,0 +1,85 @@
+<div class="table-container">
+
+  
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+      <!-- Nombre -->
+      <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.Nombre}} </td>
+      </ng-container>
+  
+      <!-- Descripción -->
+      <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef> Descripción </th>
+        <td mat-cell *matCellDef="let element"> {{element.Descripcion}} </td>
+      </ng-container>
+  
+      <!-- Fecha y Hora -->
+      <ng-container matColumnDef="fechaHora">
+        <th mat-header-cell *matHeaderCellDef> Fecha y Hora </th>
+        <td mat-cell *matCellDef="let element"> {{element.FechaHora}} </td>
+      </ng-container>
+  
+      <!-- Ubicación -->
+      <ng-container matColumnDef="ubicacion">
+        <th mat-header-cell *matHeaderCellDef> Ubicación </th>
+        <td mat-cell *matCellDef="let element"> {{element.Ubicacion}} </td>
+      </ng-container>
+  
+      <!-- Capacidad -->
+      <ng-container matColumnDef="capacidad">
+        <th mat-header-cell *matHeaderCellDef> Capacidad </th>
+        <td mat-cell *matCellDef="let element"> {{element.Capacidad}} / {{element.CantidadAsistentes}} </td>
+      </ng-container>
+  
+      <!-- Asistentes -->
+      <ng-container matColumnDef="asistentes">
+        <th mat-header-cell *matHeaderCellDef> Asistentes </th>
+        <td mat-cell *matCellDef="let element">
+          <div class="button-container">
+            <button 
+              mat-raised-button 
+              [color]="element.userAsistente ? 'primary' : 'accent'" 
+              [ngClass]="{
+                'suscrito': element.userAsistente,
+                'no-suscrito': !element.userAsistente,
+                'boton-deshabilitado': element.esCreador
+              }"
+              [disabled]="element.esCreador" 
+              (click)="toggleSubscription(element)"
+            >
+              <mat-icon>
+                {{ element.userAsistente ? 'check_circle' : 'add_circle' }}
+              </mat-icon>
+              {{ element.esCreador ? 'No disponible' : (element.userAsistente ? 'Suscrito' : 'Suscribirse') }}
+            </button>
+          </div>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <td mat-cell *matCellDef="let element">
+          <button 
+            mat-icon-button color="primary"
+            [disabled]="!element.esCreador"
+            [ngClass]="{'disabled-button': !element.esCreador}"
+            (click)="editarElemento(element)"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+          <button mat-icon-button color="warn"
+          (click)="eliminarElemento(element)">            
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+  
+      <!-- Table Header -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <!-- Table Rows -->
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  

@@ -1,0 +1,41 @@
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()" class="form-container">
+  <div class="form-row">
+    <mat-form-field appearance="outline" class="custom-field">
+      <mat-label>Nombre del evento</mat-label>
+      <input matInput formControlName="Nombre" required>
+    </mat-form-field>
+  </div>
+
+  <div class="form-descripcion">
+    <mat-form-field appearance="outline" class="custom-field">
+      <mat-label>Descripción</mat-label>
+      <textarea matInput formControlName="Descripcion" required></textarea>
+    </mat-form-field>
+  </div>
+
+  <div class="form-row">
+    <mat-form-field appearance="outline" class="custom-field">
+      <mat-label>Fecha y Hora</mat-label>
+      <input matInput formControlName="FechaHora" type="datetime-local" required>
+    </mat-form-field>
+  </div>
+
+  <div class="form-row">
+    <mat-form-field appearance="outline" class="custom-field">
+      <mat-label>Ubicación</mat-label>
+      <input matInput formControlName="Ubicacion" required>
+    </mat-form-field>
+  </div>
+
+  <div class="form-row">
+    <mat-form-field appearance="outline" class="custom-field">
+      <mat-label>Capacidad máxima de asistentes</mat-label>
+      <input matInput formControlName="Capacidad" type="number" required>
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button color="primary" type="button" (click)="cerrarModal()">Cerrar</button>
+    <button mat-raised-button color="accent" type="submit" [disabled]="eventForm.invalid">Guardar</button>
+  </div>
+</form>

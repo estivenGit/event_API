@@ -1,0 +1,94 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer Patch files
+*.wixpdb
+
+# Windows user-specific files
+Desktop.ini
+$RECYCLE.BIN/
+
+# .NET Core and Visual Studio files
+.vs2022/
+.vs2019/
+.vs2017/
+.vs/
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istTest/
+[Dd]ebugFast/
+[Dd]ebugFull/
+[Dd]ebugMerged/
+[Dd]ebugTest/
+[Dd]ebug_NETCore/
+bin/
+obj/
+testResults/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dbmdl
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET-specific files
+# Uncomment the following line if you're using Visual Studio for Mac
+# .vscode/
+
+# Npm files
+node_modules/
+
+# User specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Microsoft Azure Web App publishing
+.publish/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dbmdl
+
+# Paquetes NuGet
+/packages/
